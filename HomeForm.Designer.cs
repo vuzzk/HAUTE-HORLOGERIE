@@ -202,6 +202,7 @@ namespace HAUTE_HORLOGERIE
             // 
             this.buttonHome.BackColor = System.Drawing.Color.Transparent;
             this.buttonHome.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonHome.Enabled = false;
             this.buttonHome.FlatAppearance.BorderSize = 0;
             this.buttonHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
             this.buttonHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -322,6 +323,7 @@ namespace HAUTE_HORLOGERIE
             this.userButton.Size = new System.Drawing.Size(57, 57);
             this.userButton.TabIndex = 5;
             this.userButton.UseVisualStyleBackColor = false;
+            this.userButton.Click += new System.EventHandler(this.userButton_Click);
             // 
             // HomeForm
             // 

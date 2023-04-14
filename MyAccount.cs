@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace HAUTE_HORLOGERIE
 {
-    public partial class HomeForm : Form
+    public partial class MyAccount : Form
     {
-        public HomeForm()
+        public MyAccount()
         {
             InitializeComponent();
         }
 
-        private void aboutPanel_Paint(object sender, PaintEventArgs e)
+        private void label10_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void userButton_Click(object sender, EventArgs e)
+        private void buttonHome_Click(object sender, EventArgs e)
         {
-            MyAccount user = new MyAccount();
+            HomeForm home = new HomeForm();
             this.Hide();
-            user.ShowDialog();
+            home.ShowDialog();
             this.Close();
         }
     }

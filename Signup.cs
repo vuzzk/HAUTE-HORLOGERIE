@@ -24,5 +24,10 @@ namespace HAUTE_HORLOGERIE
             home.ShowDialog();
             this.Close();
         }
+
+        private void Signup_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

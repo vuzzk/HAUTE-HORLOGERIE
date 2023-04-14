@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,6 +63,15 @@
             this.panel1.Size = new System.Drawing.Size(1223, 100);
             this.panel1.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(68, 100);
+            this.panel2.TabIndex = 2;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -73,15 +82,6 @@
             this.label1.Size = new System.Drawing.Size(406, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "CREATE YOUR ACCOUNT";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(68, 100);
-            this.panel2.TabIndex = 2;
             // 
             // label2
             // 
@@ -289,6 +289,7 @@
             this.MinimumSize = new System.Drawing.Size(1245, 741);
             this.Name = "Signup";
             this.Text = "Haute Horlogerie - Sign up";
+            this.Load += new System.EventHandler(this.Signup_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
