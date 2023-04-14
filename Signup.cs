@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace HAUTE_HORLOGERIE
 {
-    public partial class HomeForm : Form
+    public partial class Signup : Form
     {
-        public HomeForm()
+        public Signup()
         {
             InitializeComponent();
         }
 
-        private void aboutPanel_Paint(object sender, PaintEventArgs e)
+        private void signupButton_Click(object sender, EventArgs e)
         {
-
+            HomeForm home = new HomeForm();
+            this.Hide();
+            home.ShowDialog();
+            this.Close();
         }
     }
 }
