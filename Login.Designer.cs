@@ -145,6 +145,7 @@
             this.MinimumSize = new System.Drawing.Size(1245, 741);
             this.Name = "Login";
             this.Text = "Haute Horlogerie - Log in";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

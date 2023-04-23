@@ -19,7 +19,7 @@ namespace HAUTE_HORLOGERIE
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            HomeForm home = new HomeForm();
+            AdminMain home = new AdminMain();
             this.Hide();
             home.ShowDialog();
             this.Close();
@@ -31,6 +31,11 @@ namespace HAUTE_HORLOGERIE
             this.Hide();
             signup.ShowDialog();
             this.Close();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
