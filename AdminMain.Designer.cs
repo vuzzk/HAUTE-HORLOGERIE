@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMain));
             this.headerPanel = new System.Windows.Forms.Panel();
+            this.buttonSeeStore = new System.Windows.Forms.Button();
             this.buttonLogOut = new System.Windows.Forms.Button();
             this.headerFillerPanel2 = new System.Windows.Forms.Panel();
             this.headerFillerPanel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.buttonProducts = new System.Windows.Forms.Button();
             this.buttonUsers = new System.Windows.Forms.Button();
             this.buttonOrders = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@
             // headerPanel
             // 
             this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.headerPanel.Controls.Add(this.button1);
+            this.headerPanel.Controls.Add(this.buttonSeeStore);
             this.headerPanel.Controls.Add(this.buttonLogOut);
             this.headerPanel.Controls.Add(this.headerFillerPanel2);
             this.headerPanel.Controls.Add(this.headerFillerPanel1);
@@ -54,6 +54,23 @@
             this.headerPanel.Name = "headerPanel";
             this.headerPanel.Size = new System.Drawing.Size(1229, 57);
             this.headerPanel.TabIndex = 1;
+            // 
+            // buttonSeeStore
+            // 
+            this.buttonSeeStore.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSeeStore.Dock = System.Windows.Forms.DockStyle.Left;
+            this.buttonSeeStore.FlatAppearance.BorderSize = 0;
+            this.buttonSeeStore.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.buttonSeeStore.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.buttonSeeStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSeeStore.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSeeStore.Location = new System.Drawing.Point(55, 0);
+            this.buttonSeeStore.Name = "buttonSeeStore";
+            this.buttonSeeStore.Size = new System.Drawing.Size(195, 57);
+            this.buttonSeeStore.TabIndex = 5;
+            this.buttonSeeStore.Text = "SEE STORE";
+            this.buttonSeeStore.UseVisualStyleBackColor = false;
+            this.buttonSeeStore.Click += new System.EventHandler(this.buttonSeeStore_Click);
             // 
             // buttonLogOut
             // 
@@ -70,6 +87,7 @@
             this.buttonLogOut.TabIndex = 4;
             this.buttonLogOut.Text = "LOG OUT";
             this.buttonLogOut.UseVisualStyleBackColor = false;
+            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
             // headerFillerPanel2
             // 
@@ -87,22 +105,6 @@
             this.headerFillerPanel1.Size = new System.Drawing.Size(55, 57);
             this.headerFillerPanel1.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(745, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(269, 57);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "SEE STORE";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // buttonProducts
             // 
             this.buttonProducts.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -119,6 +121,7 @@
             this.buttonProducts.TabIndex = 2;
             this.buttonProducts.Text = "PRODUCTS";
             this.buttonProducts.UseVisualStyleBackColor = false;
+            this.buttonProducts.Click += new System.EventHandler(this.buttonProducts_Click);
             // 
             // buttonUsers
             // 
@@ -189,7 +192,7 @@
         #endregion
 
         private System.Windows.Forms.Panel headerPanel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonSeeStore;
         private System.Windows.Forms.Button buttonLogOut;
         private System.Windows.Forms.Panel headerFillerPanel2;
         private System.Windows.Forms.Panel headerFillerPanel1;

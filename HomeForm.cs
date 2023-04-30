@@ -12,8 +12,11 @@ namespace HAUTE_HORLOGERIE
 {
     public partial class HomeForm : Form
     {
-        public HomeForm()
+        int u;
+
+        public HomeForm(int user)
         {
+            u = user;
             InitializeComponent();
         }
 
@@ -24,10 +27,15 @@ namespace HAUTE_HORLOGERIE
 
         private void userButton_Click(object sender, EventArgs e)
         {
-            MyAccount user = new MyAccount();
+            MyAccount user = new MyAccount(u);
             this.Hide();
             user.ShowDialog();
             this.Close();
+        }
+
+        private void HomeForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

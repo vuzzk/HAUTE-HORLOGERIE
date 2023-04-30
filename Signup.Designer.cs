@@ -36,19 +36,21 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.surnameTextBox = new System.Windows.Forms.TextBox();
             this.mailTextBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.signupButton = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.adressTextBox = new System.Windows.Forms.TextBox();
+            this.zipTextBox = new System.Windows.Forms.TextBox();
+            this.cityTextBox = new System.Windows.Forms.TextBox();
+            this.countryTextBox = new System.Windows.Forms.TextBox();
+            this.userTextBox = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,7 +109,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(76, 288);
+            this.label4.Location = new System.Drawing.Point(76, 349);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 29);
             this.label4.TabIndex = 3;
@@ -117,47 +119,47 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(76, 354);
+            this.label5.Location = new System.Drawing.Point(76, 415);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(133, 29);
             this.label5.TabIndex = 4;
             this.label5.Text = "Password:";
             // 
+            // nameTextBox
+            // 
+            this.nameTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.nameTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameTextBox.Location = new System.Drawing.Point(219, 155);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(314, 35);
+            this.nameTextBox.TabIndex = 6;
+            // 
+            // surnameTextBox
+            // 
+            this.surnameTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.surnameTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surnameTextBox.Location = new System.Drawing.Point(219, 221);
+            this.surnameTextBox.Name = "surnameTextBox";
+            this.surnameTextBox.Size = new System.Drawing.Size(314, 35);
+            this.surnameTextBox.TabIndex = 7;
+            // 
             // mailTextBox
             // 
             this.mailTextBox.BackColor = System.Drawing.SystemColors.Menu;
             this.mailTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mailTextBox.Location = new System.Drawing.Point(219, 155);
+            this.mailTextBox.Location = new System.Drawing.Point(219, 348);
             this.mailTextBox.Name = "mailTextBox";
             this.mailTextBox.Size = new System.Drawing.Size(314, 35);
-            this.mailTextBox.TabIndex = 6;
+            this.mailTextBox.TabIndex = 8;
             // 
-            // textBox1
+            // passwordTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(219, 221);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 35);
-            this.textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(219, 287);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(314, 35);
-            this.textBox2.TabIndex = 8;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(219, 353);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(314, 35);
-            this.textBox3.TabIndex = 9;
+            this.passwordTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.passwordTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.Location = new System.Drawing.Point(219, 414);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(314, 35);
+            this.passwordTextBox.TabIndex = 9;
             // 
             // label6
             // 
@@ -208,7 +210,7 @@
             this.signupButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupButton.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signupButton.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.signupButton.Location = new System.Drawing.Point(389, 512);
+            this.signupButton.Location = new System.Drawing.Point(407, 537);
             this.signupButton.Name = "signupButton";
             this.signupButton.Size = new System.Drawing.Size(428, 65);
             this.signupButton.TabIndex = 18;
@@ -216,41 +218,60 @@
             this.signupButton.UseVisualStyleBackColor = true;
             this.signupButton.Click += new System.EventHandler(this.signupButton_Click);
             // 
-            // textBox4
+            // adressTextBox
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(803, 353);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(314, 35);
-            this.textBox4.TabIndex = 22;
+            this.adressTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.adressTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adressTextBox.Location = new System.Drawing.Point(803, 353);
+            this.adressTextBox.Name = "adressTextBox";
+            this.adressTextBox.Size = new System.Drawing.Size(314, 35);
+            this.adressTextBox.TabIndex = 22;
             // 
-            // textBox5
+            // zipTextBox
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(803, 287);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(314, 35);
-            this.textBox5.TabIndex = 21;
+            this.zipTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.zipTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zipTextBox.Location = new System.Drawing.Point(803, 287);
+            this.zipTextBox.Name = "zipTextBox";
+            this.zipTextBox.Size = new System.Drawing.Size(314, 35);
+            this.zipTextBox.TabIndex = 21;
             // 
-            // textBox6
+            // cityTextBox
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(803, 221);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(314, 35);
-            this.textBox6.TabIndex = 20;
+            this.cityTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.cityTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityTextBox.Location = new System.Drawing.Point(803, 221);
+            this.cityTextBox.Name = "cityTextBox";
+            this.cityTextBox.Size = new System.Drawing.Size(314, 35);
+            this.cityTextBox.TabIndex = 20;
             // 
-            // textBox7
+            // countryTextBox
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(803, 155);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(314, 35);
-            this.textBox7.TabIndex = 19;
+            this.countryTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.countryTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countryTextBox.Location = new System.Drawing.Point(803, 155);
+            this.countryTextBox.Name = "countryTextBox";
+            this.countryTextBox.Size = new System.Drawing.Size(314, 35);
+            this.countryTextBox.TabIndex = 19;
+            // 
+            // userTextBox
+            // 
+            this.userTextBox.BackColor = System.Drawing.SystemColors.Menu;
+            this.userTextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userTextBox.Location = new System.Drawing.Point(219, 287);
+            this.userTextBox.Name = "userTextBox";
+            this.userTextBox.Size = new System.Drawing.Size(314, 35);
+            this.userTextBox.TabIndex = 24;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(76, 288);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(134, 29);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Username:";
             // 
             // Signup
             // 
@@ -258,19 +279,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1223, 685);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.userTextBox);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.adressTextBox);
+            this.Controls.Add(this.zipTextBox);
+            this.Controls.Add(this.cityTextBox);
+            this.Controls.Add(this.countryTextBox);
             this.Controls.Add(this.signupButton);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.mailTextBox);
+            this.Controls.Add(this.surnameTextBox);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -298,18 +321,20 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox surnameTextBox;
         private System.Windows.Forms.TextBox mailTextBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button signupButton;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox adressTextBox;
+        private System.Windows.Forms.TextBox zipTextBox;
+        private System.Windows.Forms.TextBox cityTextBox;
+        private System.Windows.Forms.TextBox countryTextBox;
+        private System.Windows.Forms.TextBox userTextBox;
+        private System.Windows.Forms.Label label10;
     }
 }

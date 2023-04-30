@@ -35,25 +35,25 @@ namespace HAUTE_HORLOGERIE
             this.shopNowButton = new System.Windows.Forms.Button();
             this.mainTextLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.aboutFillerPanel = new System.Windows.Forms.Panel();
-            this.headerPanel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.buttonHome = new System.Windows.Forms.Button();
-            this.headerFillerPanel2 = new System.Windows.Forms.Panel();
-            this.headerFillerPanel1 = new System.Windows.Forms.Panel();
             this.logoPanel = new System.Windows.Forms.Panel();
+            this.aboutFillerPanel = new System.Windows.Forms.Panel();
             this.shopNowPanel = new System.Windows.Forms.Panel();
             this.mainWatchRef = new System.Windows.Forms.Label();
             this.mainWatchName = new System.Windows.Forms.Label();
+            this.headerPanel = new System.Windows.Forms.Panel();
             this.cartButton = new System.Windows.Forms.Button();
             this.wishlistButton = new System.Windows.Forms.Button();
             this.userButton = new System.Windows.Forms.Button();
+            this.brandsButton = new System.Windows.Forms.Button();
+            this.serviceButton = new System.Windows.Forms.Button();
+            this.shopButton = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
+            this.headerFillerPanel2 = new System.Windows.Forms.Panel();
+            this.headerFillerPanel1 = new System.Windows.Forms.Panel();
             this.mainPanel.SuspendLayout();
             this.aboutPanel.SuspendLayout();
-            this.headerPanel.SuspendLayout();
             this.shopNowPanel.SuspendLayout();
+            this.headerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -94,7 +94,7 @@ namespace HAUTE_HORLOGERIE
             this.shopNowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shopNowButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shopNowButton.ForeColor = System.Drawing.Color.White;
-            this.shopNowButton.Location = new System.Drawing.Point(120, 424);
+            this.shopNowButton.Location = new System.Drawing.Point(126, 446);
             this.shopNowButton.Name = "shopNowButton";
             this.shopNowButton.Size = new System.Drawing.Size(204, 42);
             this.shopNowButton.TabIndex = 5;
@@ -107,7 +107,7 @@ namespace HAUTE_HORLOGERIE
             this.mainTextLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mainTextLabel.Location = new System.Drawing.Point(0, 291);
             this.mainTextLabel.Name = "mainTextLabel";
-            this.mainTextLabel.Size = new System.Drawing.Size(442, 130);
+            this.mainTextLabel.Size = new System.Drawing.Size(442, 142);
             this.mainTextLabel.TabIndex = 4;
             this.mainTextLabel.Text = resources.GetString("mainTextLabel.Text");
             this.mainTextLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,114 +123,6 @@ namespace HAUTE_HORLOGERIE
             this.titleLabel.Text = "BEST FROM THE  WORLD OF WATCHES";
             this.titleLabel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // aboutFillerPanel
-            // 
-            this.aboutFillerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.aboutFillerPanel.Location = new System.Drawing.Point(0, 0);
-            this.aboutFillerPanel.Name = "aboutFillerPanel";
-            this.aboutFillerPanel.Size = new System.Drawing.Size(442, 70);
-            this.aboutFillerPanel.TabIndex = 0;
-            // 
-            // headerPanel
-            // 
-            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.headerPanel.Controls.Add(this.cartButton);
-            this.headerPanel.Controls.Add(this.wishlistButton);
-            this.headerPanel.Controls.Add(this.userButton);
-            this.headerPanel.Controls.Add(this.button3);
-            this.headerPanel.Controls.Add(this.button2);
-            this.headerPanel.Controls.Add(this.button1);
-            this.headerPanel.Controls.Add(this.buttonHome);
-            this.headerPanel.Controls.Add(this.headerFillerPanel2);
-            this.headerPanel.Controls.Add(this.headerFillerPanel1);
-            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerPanel.ForeColor = System.Drawing.Color.White;
-            this.headerPanel.Location = new System.Drawing.Point(0, 0);
-            this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(1229, 57);
-            this.headerPanel.TabIndex = 0;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(535, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 57);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "BRANDS";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(375, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 57);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "SERVICE";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(215, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 57);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "SHOP";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // buttonHome
-            // 
-            this.buttonHome.BackColor = System.Drawing.Color.Transparent;
-            this.buttonHome.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonHome.Enabled = false;
-            this.buttonHome.FlatAppearance.BorderSize = 0;
-            this.buttonHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
-            this.buttonHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonHome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonHome.Location = new System.Drawing.Point(55, 0);
-            this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(160, 57);
-            this.buttonHome.TabIndex = 1;
-            this.buttonHome.Text = "HOME";
-            this.buttonHome.UseVisualStyleBackColor = false;
-            // 
-            // headerFillerPanel2
-            // 
-            this.headerFillerPanel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.headerFillerPanel2.Location = new System.Drawing.Point(1174, 0);
-            this.headerFillerPanel2.Name = "headerFillerPanel2";
-            this.headerFillerPanel2.Size = new System.Drawing.Size(55, 57);
-            this.headerFillerPanel2.TabIndex = 1;
-            // 
-            // headerFillerPanel1
-            // 
-            this.headerFillerPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.headerFillerPanel1.Location = new System.Drawing.Point(0, 0);
-            this.headerFillerPanel1.Name = "headerFillerPanel1";
-            this.headerFillerPanel1.Size = new System.Drawing.Size(55, 57);
-            this.headerFillerPanel1.TabIndex = 0;
-            // 
             // logoPanel
             // 
             this.logoPanel.BackgroundImage = global::HAUTE_HORLOGERIE.Properties.Resources.hhLogo;
@@ -240,6 +132,14 @@ namespace HAUTE_HORLOGERIE
             this.logoPanel.Name = "logoPanel";
             this.logoPanel.Size = new System.Drawing.Size(442, 163);
             this.logoPanel.TabIndex = 1;
+            // 
+            // aboutFillerPanel
+            // 
+            this.aboutFillerPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.aboutFillerPanel.Location = new System.Drawing.Point(0, 0);
+            this.aboutFillerPanel.Name = "aboutFillerPanel";
+            this.aboutFillerPanel.Size = new System.Drawing.Size(442, 70);
+            this.aboutFillerPanel.TabIndex = 0;
             // 
             // shopNowPanel
             // 
@@ -278,6 +178,25 @@ namespace HAUTE_HORLOGERIE
             this.mainWatchName.Size = new System.Drawing.Size(418, 23);
             this.mainWatchName.TabIndex = 0;
             this.mainWatchName.Text = "Audemars Piguet Royal Oak Jumbo Extra-Thin";
+            // 
+            // headerPanel
+            // 
+            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.headerPanel.Controls.Add(this.cartButton);
+            this.headerPanel.Controls.Add(this.wishlistButton);
+            this.headerPanel.Controls.Add(this.userButton);
+            this.headerPanel.Controls.Add(this.brandsButton);
+            this.headerPanel.Controls.Add(this.serviceButton);
+            this.headerPanel.Controls.Add(this.shopButton);
+            this.headerPanel.Controls.Add(this.homeButton);
+            this.headerPanel.Controls.Add(this.headerFillerPanel2);
+            this.headerPanel.Controls.Add(this.headerFillerPanel1);
+            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerPanel.ForeColor = System.Drawing.Color.White;
+            this.headerPanel.Location = new System.Drawing.Point(0, 0);
+            this.headerPanel.Name = "headerPanel";
+            this.headerPanel.Size = new System.Drawing.Size(1229, 57);
+            this.headerPanel.TabIndex = 0;
             // 
             // cartButton
             // 
@@ -325,6 +244,87 @@ namespace HAUTE_HORLOGERIE
             this.userButton.UseVisualStyleBackColor = false;
             this.userButton.Click += new System.EventHandler(this.userButton_Click);
             // 
+            // brandsButton
+            // 
+            this.brandsButton.BackColor = System.Drawing.Color.Transparent;
+            this.brandsButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.brandsButton.FlatAppearance.BorderSize = 0;
+            this.brandsButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.brandsButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.brandsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.brandsButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brandsButton.Location = new System.Drawing.Point(535, 0);
+            this.brandsButton.Name = "brandsButton";
+            this.brandsButton.Size = new System.Drawing.Size(160, 57);
+            this.brandsButton.TabIndex = 4;
+            this.brandsButton.Text = "BRANDS";
+            this.brandsButton.UseVisualStyleBackColor = false;
+            // 
+            // serviceButton
+            // 
+            this.serviceButton.BackColor = System.Drawing.Color.Transparent;
+            this.serviceButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.serviceButton.FlatAppearance.BorderSize = 0;
+            this.serviceButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.serviceButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.serviceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.serviceButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serviceButton.Location = new System.Drawing.Point(375, 0);
+            this.serviceButton.Name = "serviceButton";
+            this.serviceButton.Size = new System.Drawing.Size(160, 57);
+            this.serviceButton.TabIndex = 3;
+            this.serviceButton.Text = "SERVICE";
+            this.serviceButton.UseVisualStyleBackColor = false;
+            // 
+            // shopButton
+            // 
+            this.shopButton.BackColor = System.Drawing.Color.Transparent;
+            this.shopButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.shopButton.FlatAppearance.BorderSize = 0;
+            this.shopButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.shopButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.shopButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.shopButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shopButton.Location = new System.Drawing.Point(215, 0);
+            this.shopButton.Name = "shopButton";
+            this.shopButton.Size = new System.Drawing.Size(160, 57);
+            this.shopButton.TabIndex = 2;
+            this.shopButton.Text = "SHOP";
+            this.shopButton.UseVisualStyleBackColor = false;
+            // 
+            // homeButton
+            // 
+            this.homeButton.BackColor = System.Drawing.Color.Transparent;
+            this.homeButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.homeButton.Enabled = false;
+            this.homeButton.FlatAppearance.BorderSize = 0;
+            this.homeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver;
+            this.homeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.homeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.homeButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeButton.Location = new System.Drawing.Point(55, 0);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(160, 57);
+            this.homeButton.TabIndex = 1;
+            this.homeButton.Text = "HOME";
+            this.homeButton.UseVisualStyleBackColor = false;
+            // 
+            // headerFillerPanel2
+            // 
+            this.headerFillerPanel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.headerFillerPanel2.Location = new System.Drawing.Point(1174, 0);
+            this.headerFillerPanel2.Name = "headerFillerPanel2";
+            this.headerFillerPanel2.Size = new System.Drawing.Size(55, 57);
+            this.headerFillerPanel2.TabIndex = 1;
+            // 
+            // headerFillerPanel1
+            // 
+            this.headerFillerPanel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.headerFillerPanel1.Location = new System.Drawing.Point(0, 0);
+            this.headerFillerPanel1.Name = "headerFillerPanel1";
+            this.headerFillerPanel1.Size = new System.Drawing.Size(55, 57);
+            this.headerFillerPanel1.TabIndex = 0;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
@@ -339,11 +339,12 @@ namespace HAUTE_HORLOGERIE
             this.Name = "HomeForm";
             this.Text = "Haute Horlogerie - HOME";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.HomeForm_Load);
             this.mainPanel.ResumeLayout(false);
             this.aboutPanel.ResumeLayout(false);
-            this.headerPanel.ResumeLayout(false);
             this.shopNowPanel.ResumeLayout(false);
             this.shopNowPanel.PerformLayout();
+            this.headerPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -352,10 +353,10 @@ namespace HAUTE_HORLOGERIE
         private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Panel headerPanel;
         private System.Windows.Forms.Button userButton;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button buttonHome;
+        private System.Windows.Forms.Button brandsButton;
+        private System.Windows.Forms.Button serviceButton;
+        private System.Windows.Forms.Button shopButton;
+        private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.Panel headerFillerPanel2;
         private System.Windows.Forms.Panel headerFillerPanel1;
         private System.Windows.Forms.Button cartButton;
