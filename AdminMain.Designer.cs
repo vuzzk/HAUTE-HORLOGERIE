@@ -139,6 +139,7 @@
             this.buttonUsers.TabIndex = 3;
             this.buttonUsers.Text = "USERS";
             this.buttonUsers.UseVisualStyleBackColor = false;
+            this.buttonUsers.Click += new System.EventHandler(this.buttonUsers_Click);
             // 
             // buttonOrders
             // 

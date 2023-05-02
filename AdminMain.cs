@@ -39,5 +39,13 @@ namespace HAUTE_HORLOGERIE
             products.ShowDialog();
             this.Close();
         }
+
+        private void buttonUsers_Click(object sender, EventArgs e)
+        {
+            AdminUsers users = new AdminUsers();
+            this.Hide();
+            users.ShowDialog();
+            this.Close();
+        }
     }
 }

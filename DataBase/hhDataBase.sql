@@ -92,3 +92,32 @@ add constraint FK_porudzbina_id
 FOREIGN KEY (porudzbina_id)
 REFERENCES Porudzbine(porudzbina_id);
 
+--POGLEDI---------------------------------------------
+
+create view PregledProizvoda as
+select Proizvodi.ime as 'NAME', sifra as 'SKU', cena as 'PRICE IN EUR', kolicina as 'QUANTITY', proizvodjac as 'MANUFACTURER', tekst as 'DESCRIPTION',Kategorije.ime as 'CATEGORY' from Proizvodi
+join Opisi on Proizvodi.opis_id = Opisi.opis_id
+join Kategorije on Proizvodi.kategorija_id = Kategorije.kategorija_id
+select * from PregledProizvoda
+
+create view OstaliKorisnici as
+select CONCAT(ime, ' ', prezime) as 'NAME',username as 'USERNAME', email as 'E-MAIL', drzava as 'COUNTRY', grad as 'CITY', postanski_br as 'ZIP CODE', adresa as 'ADRESS', naziv as 'ROLE' from Korisnici
+join UlogeKorisnika on UlogeKorisnika.uloga_korisnika_id = Korisnici.uloga_korisnika_id 
+where Korisnici.uloga_korisnika_id in (2,3)
+select * from OstaliKorisnici
+
+
+
+--INSERTI---------------------------------------------
+Insert into Kategorije values
+('Diver','Diver watches designed to withstand deepths of sea.',NULL),
+('Dress','Dress watches ideal for big celebrations in your life.',NULL),
+('GMT','GMT watches for people who are always in move.',NULL);
+
+Insert into Opisi values
+('Submariner Date in Oystersteel with a Cerachrom bezel insert in black ceramic and a black dial with large luminescent hour markers.', NULL,NULL,NULL,NULL),
+('With traditional hour, minute and seconds hands, a triangle-tipped 24-hour hand, and a bidirectional rotatable bezel with a 24-hour graduated Cerachrom insert, the GMT-Master II can display the time in two time zones simultaneously: either the local time and the reference time, or the local time and that of an alternative time zone. The date, at 3 o’clock on the dial, is synchronized with the local time.', NULL,NULL,NULL,NULL);
+
+Insert into Proizvodi values
+('Submariner Date Black 41mm','126610LN',15500,5,'Rolex',1,1),
+('FMT Master II "Pepsi" 40mm','126710BLRO',25000,5,'Rolex',2,3);
