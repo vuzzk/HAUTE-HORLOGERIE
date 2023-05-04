@@ -95,7 +95,7 @@ REFERENCES Porudzbine(porudzbina_id);
 --POGLEDI---------------------------------------------
 
 create view PregledProizvoda as
-select Proizvodi.ime as 'NAME', sifra as 'SKU', cena as 'PRICE IN EUR', kolicina as 'QUANTITY', proizvodjac as 'MANUFACTURER', tekst as 'DESCRIPTION',Kategorije.ime as 'CATEGORY' from Proizvodi
+select Proizvodi.ime as 'NAME', sifra as 'SKU', cena as 'PRICE', kolicina as 'QUANTITY', proizvodjac as 'MANUFACTURER', tekst as 'DESCRIPTION',Kategorije.ime as 'CATEGORY' from Proizvodi
 join Opisi on Proizvodi.opis_id = Opisi.opis_id
 join Kategorije on Proizvodi.kategorija_id = Kategorije.kategorija_id
 select * from PregledProizvoda
@@ -112,12 +112,17 @@ select * from OstaliKorisnici
 Insert into Kategorije values
 ('Diver','Diver watches designed to withstand deepths of sea.',NULL),
 ('Dress','Dress watches ideal for big celebrations in your life.',NULL),
-('GMT','GMT watches for people who are always in move.',NULL);
+('GMT','GMT watches for people who are always in move.',NULL),
+('Chronograph','A chronograph watch is a traditional timepiece fitted with an extra complication to act as a stopwatch.',NULL);
 
 Insert into Opisi values
 ('Submariner Date in Oystersteel with a Cerachrom bezel insert in black ceramic and a black dial with large luminescent hour markers.', NULL,NULL,NULL,NULL),
-('With traditional hour, minute and seconds hands, a triangle-tipped 24-hour hand, and a bidirectional rotatable bezel with a 24-hour graduated Cerachrom insert, the GMT-Master II can display the time in two time zones simultaneously: either the local time and the reference time, or the local time and that of an alternative time zone. The date, at 3 o’clock on the dial, is synchronized with the local time.', NULL,NULL,NULL,NULL);
+('With traditional hour, minute and seconds hands, a triangle-tipped 24-hour hand, and a bidirectional rotatable bezel with a 24-hour graduated Cerachrom insert, the GMT-Master II can display the time in two time zones simultaneously: either the local time and the reference time, or the local time and that of an alternative time zone. The date, at 3 o’clock on the dial, is synchronized with the local time.', NULL,NULL,NULL,NULL),
+('This 50th anniversary timepiece pays tribute to the “Silver Snoopy Award” that OMEGA received from NASA astronauts in 1970, in recognition of the brand’s contributions to space exploration, including the Apollo 13 mission. The 42 mm case in stainless steel is presented on a blue nylon fabric strap, which features the trajectory of the Apollo 13 mission on the embossed lining. ', NULL,NULL,NULL,NULL),
+('Featuring the Lange outsize date and a precise moon-phase display, the SAXONIA MOON PHASE combines two classic complications. The symmetric arrangement of the date display at 12 o’clock and the moon-phase display in the top section of the subsidiary seconds dial at 6 o’clock emphasises the elegant design of this timepiece. The intense deep-blue colour of the solid-gold lunar disc is the result of a patented coating process.', NULL,NULL,NULL,NULL);
 
 Insert into Proizvodi values
 ('Submariner Date Black 41mm','126610LN',15500,5,'Rolex',1,1),
-('FMT Master II "Pepsi" 40mm','126710BLRO',25000,5,'Rolex',2,3);
+('FMT Master II "Pepsi" 40mm','126710BLRO',25000,5,'Rolex',2,3),
+('Speedmaster Silver Snoopy Award 42mm','310.32.42.50',15000,1,'Omega',4,5),
+('Saxonia Moon Phase Rose Gold 40mm','384.032',15000,3,'A. Lange & Söhne',5,2);
